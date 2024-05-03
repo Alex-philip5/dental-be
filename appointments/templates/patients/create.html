@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+{% block container %}
+
+
+<div class="content">
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <a class="btn" href="/patients/">Close</a>
+        <button type="submit" class="btn btn-success">Create</button>
+    </form>
+</div>
+
+{% endblock %}

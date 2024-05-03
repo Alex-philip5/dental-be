@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block container %}
+<div class="card mt-4 w-50">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-5">
+          <h6 class="mb-0">Full Name</h6>
+        </div>
+        <div class="col-sm-7 text-secondary">
+            {{user.secretary}}
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-5">
+          <h6 class="mb-0">Email</h6>
+        </div>
+        <div class="col-sm-7 text-secondary">
+            {{user.secretary.email}}
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-5">
+          <h6 class="mb-0">Phone Number</h6>
+        </div>
+        <div class="col-sm-5 text-secondary">
+            {{phone}}
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-5">
+          <h6 class="mb-0">Birth Date</h6>
+        </div>
+        <div class="col-sm-7 text-secondary">
+            {{user.secretary.birth_date}}
+        </div>
+      </div>
+      <hr>
+    </div>
+</div>
+{% endblock %}
